@@ -1,8 +1,9 @@
-<DocType html>
-
+<!DOCTYPE html>
 <html>
     <head>
         <title>Learn DevOps from Basics</title>
+        <!-- Add Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <style>
             body {
                 margin: 0;
@@ -52,41 +53,72 @@
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
+            <nav class="container">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a href="home">Home</a></li>
+                    <li class="nav-item"><a href="about">About</a></li>
+                    <li class="nav-item"><a href="contact">Contact</a></li>
+                    <li class="nav-item"><a href="courses">Courses</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section>
-                <h1>Learn DevOps from Basics</h1>
-                <p>DevOps is a set of practices that combines software development (Dev) and IT operations (Ops)</p>
-                <p>It aims to shorten the systems development life cycle and provide continuous delivery with high software quality. DevOps is complementary with Agile software development; several DevOps aspects came from Agile methodology</p>    
+            <div class="container">
+                <section class="hero-section text-center">
+                    <h1 class="display-4">Learn DevOps from Basics</h1>
+                    <p class="lead">DevOps is a set of practices that combines software development (Dev) and IT operations (Ops)</p>
+                    <p>It aims to shorten the systems development life cycle and provide continuous delivery with high software quality.</p>
+                </section>
 
-                <h2>Main Tutorials</h2>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa">DevOps Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLNOxX0RfndiYSt1Le9azze">AWS Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIcxgCUyBHVOcWs0Krjx9xR">Azure Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf">Terraform Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKwTyYNJCUwGPvql0TrsPgv">Python Zero to Hero</a></p>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h2 class="card-title">Main Tutorials</h2>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa" class="text-decoration-none">DevOps Zero to Hero</a></li>
+                                    <li class="list-group-item"><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLNOxX0RfndiYSt1Le9azze" class="text-decoration-none">AWS Zero to Hero</a></li>
+                                    <li class="list-group-item"><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIcxgCUyBHVOcWs0Krjx9xR" class="text-decoration-none">Azure Zero to Hero</a></li>
+                                    <li class="list-group-item"><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf" class="text-decoration-none">Terraform Zero to Hero</a></li>
+                                    <li class="list-group-item"><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKwTyYNJCUwGPvql0TrsPgv" class="text-decoration-none">Python Zero to Hero</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-                <h2>Additional Tutorials</h2>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKv4MFW35XRskZbQbrt6ep-">Networking Fundamentals</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLxd5nmtmORCmhD5jkrNbuE">Ansible Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKu7OZpgj1-MzJFqZ8RBp6f">GitOps Zero to Hero</a></p>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h2 class="card-title">Additional Tutorials</h2>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKv4MFW35XRskZbQbrt6ep-" class="text-decoration-none">Networking Fundamentals</a></li>
+                                    <li class="list-group-item"><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLxd5nmtmORCmhD5jkrNbuE" class="text-decoration-none">Ansible Zero to Hero</a></li>
+                                    <li class="list-group-item"><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKu7OZpgj1-MzJFqZ8RBp6f" class="text-decoration-none">GitOps Zero to Hero</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <h2>Troubleshooting Tutorials</h2>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX">Troubleshooting Kubernetes</a></p>
-            </section>
+                <section class="mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Troubleshooting Tutorials</h2>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX" class="text-decoration-none">Troubleshooting Kubernetes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
 
-        <footer>
-            <p>&copy; Abhishek.Veeramalla</p>
+        <footer class="text-center">
+            <p class="mb-0">&copy; Asmita</p>
         </footer>
+
+        <!-- Add Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

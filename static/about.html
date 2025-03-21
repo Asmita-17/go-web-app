@@ -1,7 +1,9 @@
-<Docktype html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>About</title>
+        <!-- Add Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <style>
             body {
                 margin: 0;
@@ -51,40 +53,49 @@
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
+            <nav class="container">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a href="home">Home</a></li>
+                    <li class="nav-item"><a href="about">About</a></li>
+                    <li class="nav-item"><a href="contact">Contact</a></li>
+                    <li class="nav-item"><a href="courses">Courses</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section>
-                <h1>About the Author</h1>
-                <p>Hi Everyone, My name is Abhishek and welcome to my channel :)</p>
-
-                    <p>    I am an opensource enthusiast and a great believer in sharing knowledge. </p>
-                        <p>  I have my footprints in popular opensource projects like Argo CD, Argo CD Operator, Argo Rollouts Manager, GitOps Operator, F5 Ingress Controller, Nginx Ingress Controller by Nginx and others. </p>
-                    
-                            <p> Apart from working with Red Hat as a GitOps product lead, I also hold below positions in OpenSource communities</p>
-                                <p>  - Maintainer of Argo CD Operator</p>
-                                    <p> - Creator of Argo Rollouts Manager</p>
-                                        <p> - Maintainer of RedHat Developer (GitOps operator)</p>
-                                            <p> - Member of Argo Project</p>
-                                                <p> - Member of Argo SIG Security</p>
-                    
-                                                    <p> If you want to learn complete devops for free with practical projects, checkout the playlist</p>
-                                                        <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa"> Playlists</a></p>
-                    
-                                                            <p> Please subscribe to the channel to keep learning and growing together. Thanks :)</p>
-            </section>
+            <div class="container">
+                <section class="hero-section">
+                    <h1 class="display-4 text-center mb-4">About the Author</h1>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <p class="lead">Hi Everyone, My name is Asmita:)</p>
+                            <p>I am an opensource enthusiast and a great believer in sharing knowledge.</p>
+                            
+                            <h3 class="mt-4 mb-3">Community Positions</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">- Maintainer of Argo CD Operator</li>
+                                <li class="mb-2">- Creator of Argo Rollouts Manager</li>
+                                <li class="mb-2">- Maintainer of RedHat Developer (GitOps operator)</li>
+                                <li class="mb-2">- Member of Argo Project</li>
+                                <li class="mb-2">- Member of Argo SIG Security</li>
+                            </ul>
+                            
+                            <div class="mt-4">
+                                <p>If you want to learn complete devops for free with practical projects, checkout the playlist</p>
+                                <a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa" class="btn btn-primary">View Playlists</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
 
-        <footer>
-            <p>&copy; Abhishek.Veeramalla</p>
+        <footer class="text-center">
+            <p class="mb-0">&copy; Asmita</p>
         </footer>
+
+        <!-- Add Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

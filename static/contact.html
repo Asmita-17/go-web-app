@@ -1,7 +1,9 @@
-<Doctype html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Contact</title>
+        <!-- Add Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <style>
             body {
                 margin: 0;
@@ -51,18 +53,31 @@
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
+            <nav class="container">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a href="home">Home</a></li>
+                    <li class="nav-item"><a href="about">About</a></li>
+                    <li class="nav-item"><a href="contact">Contact</a></li>
+                    <li class="nav-item"><a href="courses">Courses</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section>
-                <h1>Contact Us</h1>
-                <p>For any doubts while learning, Join our Members only exclusive slack channel</p>
-                <a href="https://www.youtube.com/abhishekVeeramalla/join">Join Slack</a>
+            <div class="container">
+                <section class="hero-section text-center">
+                    <h1 class="display-4">Contact Us</h1>
+                    <p class="lead">For any doubts while learning, Join our Members only exclusive slack channel</p>
+                    <a href="https://www.youtube.com/abhishekVeeramalla/join" class="btn btn-primary btn-lg mt-3">Join Slack</a>
+                </section>
+            </div>
+        </main>
+
+        <footer class="text-center">
+            <p class="mb-0">&copy; Asmita</p>
+        </footer>
+
+        <!-- Add Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
